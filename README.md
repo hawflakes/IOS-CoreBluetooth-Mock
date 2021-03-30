@@ -118,7 +118,7 @@ let manager = CBCentralManager(delegate: self, queue: ...)
 ```
 you need to use the `CBCentralManagerFactory`:
 ```swift
-let manager = CBCentralManagerFactory.initiate(delegate: self, queue: ...)
+let manager = CBCentralManagerFactory.instance(delegate: self, queue: ...)
 ```
 The last parameter, `forceMock`, when set to *true*, allows to run mock implementation also on a physical device.
 
